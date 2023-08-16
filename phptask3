@@ -1,0 +1,13 @@
+<?php
+$so = 'PHP скриптова мова програмування була створена для генерації HTML-сторінок на стороні вебсервера.';
+
+function revSent($someSentence) {
+    $arraySentence = explode(" ", $someSentence);
+    $reversed = array_reverse($arraySentence);
+    $final = implode(" ", $reversed);
+    return $final;
+}
+
+$revSent = revSent($so);
+echo "Перевернуте речення виглядає так: " . $revSent;
+?>
