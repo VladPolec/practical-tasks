@@ -1,0 +1,19 @@
+<?php
+function daysMath($date1, $days2){
+    $obj1 = date_create($date1);
+    $obj2 = date_create($date2);
+
+    if($obj1 && $obj2){
+        $interv = date_diff($obj1,$obj2);
+        return $interv->format('%a');
+    }
+    else{
+        return 'Зазначений неправыльний формат дати.';
+    }
+}
+
+$date1 = "2023-03-02";
+$date2 = "2023-05-07";
+$days = daysMath($date1,$date2);
+echo "Кылькысть дныв мыж $date1 та $date2 сягаж $days дныв.";
+?>
