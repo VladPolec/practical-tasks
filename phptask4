@@ -1,0 +1,18 @@
+<?php
+$someWord = "Rivir";
+function palindrom($input){
+    echo "Початкове слово: " . $input;
+    $lowLetters = strtolower($input);
+    $reverseWord = strrev($lowLetters);
+    echo "Розвернуте слово: " . $reverseWord;
+    if($reverseWord==$lowLetters){
+        echo $input." - ПАЛИНДРОМ!";
+    }
+    else{
+        echo $input." - НЕ ПАЛИНДРОМ!";
+    }
+}
+ 
+$palindrom = palindrom();
+
+?>
