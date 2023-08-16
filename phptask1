@@ -1,0 +1,47 @@
+<?php
+function roman($num){
+    switch($num){
+        case 1:
+            echo "I";
+             reak;
+
+        case 2:
+            echo "II";
+            break;  
+
+        case 3:
+            echo "III";
+            break;
+
+        case 4:
+            echo "IV";
+            break;
+            
+        case 5:
+            echo "V";
+            break; 
+
+        case 6:
+            echo "VI";
+            break;
+
+        case 7:
+            echo "VII";
+            break;
+            
+        case 8:
+            echo "VIII";
+            break; 
+             
+        case 9:
+            echo "IX";
+            break;
+
+        default:
+        echo "Неправильно введене число!";
+        break;           
+    }
+    return $num;
+}
+roman(6);
+?>
