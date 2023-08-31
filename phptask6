@@ -1,14 +1,47 @@
 <?php
+function romanRev($num){
+    switch($num){
+        case 'I':
+            echo 1;
+             reak;
 
-function parse($x){
+        case "II":
+            echo 2;
+            break;  
 
-$parInt= (int) $x;
-$formNum = number_format($parInt, 0, '', ',');
-return $formNum;
+        case "III":
+            echo 3;
+            break;
 
-} 
+        case "IV":
+            echo 4;
+            break;
+            
+        case "V":
+            echo 5;
+            break; 
 
-$num = 2356631;
-$final = parse($num);
-echo "Форматоване число: " . $final;
+        case "VI":
+            echo 6;
+            break;
+
+        case "VII":
+            echo 7;
+            break;
+            
+        case "VIII":
+            echo 8;
+            break; 
+             
+        case "IX":
+            echo 9;
+            break;
+
+        default:
+        echo "Неправильно введене число!";
+        break;           
+    }
+    return $num;
+}
+roman('VI');
 ?>
